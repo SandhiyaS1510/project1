@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    transition: background-color 2s ease-in-out;
+  }
+  
+  /* Navigation */
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff6f61;
+  }
+  
+  /* Introduction Section */
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: left;
+    padding: 0 5%;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .intro-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    color: #fff; /* Set text color to white */
+  }
+  
+  .intro-text h1 span {
+    color: #fff; /* Ensure "SANDHIYA S" text is white */
+  }
+  
+  .intro-text p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+  }
+  
+  .intro-text .btn {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .intro-text .btn:hover {
+    background: #555;
+  }
+  
+  /* Background Pattern */
+  .pattern-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .square {
+    width: 100%;
+    height: 100%;
+    animation: colorChange 3s infinite ease-in-out;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes colorChange {
+    0% { background-color: #ff6f61; }
+    25% { background-color: #6a5acd; }
+    50% { background-color: #20b2aa; }
+    75% { background-color: #ff6347; }
+    100% { background-color: #ff6f61; }
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact-info li {
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
